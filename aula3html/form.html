@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" >
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome...">
+        <br>
+        <br>
+        <label for="meuemail">Digite seu email</label>
+        <input type="email" name="meuemail">
+        <br>
+        <br>
+        <label for="senha">Digite sua senha</label>
+        <input type="password" name="senha">
+        <br>
+        <br>
+        <label for="dt_nasc">Data de nascimento</label>
+        <input type="date" name="dt_nasc">
+        <input type="datetime-local" name="dt_nasc">
+        <input type="time" name="dt_nasc">
+        <br>
+        <br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone">
+        <br>
+        <br>
+        <label for="botao">Botão</label>
+        <input type="button" name="botao" value="Clique">
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+        <label for="textao">Textão</label>
+        <textarea name="textao" placeholder="Insira um texto..."></textarea>
+        <br>
+        <br>
+        <label for="cor">Cor:</label>
+        <input type="color" name="cor">
+        <br>
+        <br>
+        <label for="numero">Número</label>
+        <input type="number" name="numero" min="0" max="100" value="20" step="20">
+        <br>
+        <br>
+        <label for="slider">Barrinha:</label> 0
+        <input type="range" name="slider" min="0" max="100" value="20" step="20"> 100
+        <br>
+        <br>
+        <label for="escolha">Escolha seu curso: </label>
+        <br>
+        <br>
+        <input type="radio" name="escolha" value="automacao"> Automação
+        <input type="radio" name="escolha" value="eletrica"> Elétrica
+        <input type="radio" name="escolha" value="dds" checked> DDS
+        <br>
+        <br>
+        <label for="caixinha">Tecnologias: </label>
+        <br>
+        <br>
+        <input type="checkbox" name="tec1" value="zap"> Whatsapp
+        <input type="checkbox" name="tec2" value="robo" checked> Robótica
+        <input type="checkbox" name="tec3" value="pneu"> Pneu
+        <input type="checkbox" name="tec4" value="predio"> Prédio
+        <br>
+        <br>
+        <label for="heroi">Escolha seu herói: </label>
+        <select name="heroi">
+            <option value="Batman">Batman</option>
+            <option value="Flash">Flash</option>
+            <option value="Kratos">Kratos</option>
+            <option value="KND">KND</option>
+        </select>
+        <br>
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Acabou">
+    </form>
+</body>
+</html>
