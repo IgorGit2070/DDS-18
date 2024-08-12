@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - HTML 3</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/919/919826.png" >
+    <link rel="stylesheet" href="./estilo.css" >
+    <style>
+        #title-form{
+    margin: 10px 10px 10px 10px;
+}
+
+.pessoal {
+    /* background-color: aqua; */
+    width: 520px;
+    height: 125px;
+    border: 1px black solid;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.pessoal-interna {
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 15px;
+}
+
+#title-pessoal {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 100px;
+    height: 15px;
+    background-color: white;
+    border: 2px white solid;
+    text-align: center;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+}
+
+.profissional {
+    /* background-color: lightgrey; */
+    width: 520px;
+    height: 220px;
+    border: 1px black solid;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.profissional-interna {
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 15px;
+}
+
+#title-profissional {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 130px;
+    height: 15px;
+    background-color: white;
+    border: 2px white solid;
+    text-align: center;
+}
+
+#text-area {
+    width: 350px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.botoes {
+    /* background-color: blueviolet; */
+    margin: 10px 10px 10px 10px;
+    width: 125px;
+    height: 25px;
+}
+
+label {
+    margin: 2px;
+}
+
+input {
+    margin: 2px;
+}
+
+.natureza-cargo {
+    /* background-color: chartreuse; */
+    /* border: 1px black solid; */
+    width: 500px;
+    height: 50px;
+}
+
+.area-interesse {
+    /* background-color: gold; */
+    /* border: 1px black solid;; */
+    width: 500px;
+    height: 50px;
+}
+    </style>
+</head>
+<body>
+    <h1 id="title-form">Formulário</h1>
+    <form>
+        <div class="pessoal">
+            <div class="pessoal-interna">
+        <label id="title-pessoal">Dados pessoais</label>
+        <br>
+        <label>Nome:</label>
+        <input>
+        <br>
+        <label>Endereço:</label>
+        <input>
+        <br>
+        <label>Cidade:</label>
+        <input>
+        <br>
+        <label for="estado">Estado: </label>
+        <select name="estado">
+            <option value="sp">São Paulo</option>
+            <option value="es">Espírito Santo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+        </select>
+        <br>
+            </div>
+        </div>
+        <div class="profissional">
+            <div class="profissional-interna">
+        <label id="title-profissional">Dados profissionais</label>
+        <br>
+                <div class="natureza-cargo">
+        <label for="escolha">Natureza do Cargo</label>
+        <br>
+        <input type="radio" name="escolha" value="gerencia" checked> Gerência
+        <input type="radio" name="escolha" value="financeiro"> Financeiro
+        <input type="radio" name="escolha" value="recepcao"> Recepção
+        <input type="radio" name="escolha" value="administrativo"> Administrativo
+        <input type="radio" name="escolha" value="juridico"> Jurídico
+        <br>
+                </div>
+                <div class="area-interesse">
+        <label for="caixinha">Área de interesse</label>
+        <br>
+        <input type="checkbox" name="int1" value="comp"> Computação
+        <input type="checkbox" name="int2" value="bio"> Biologia
+        <input type="checkbox" name="int3" value="amb"> Meio Ambiente
+        <input type="checkbox" name="int4" value="eng"> Engenharia
+        <input type="checkbox" name="int5" value="hist"> História
+        <br>
+                </div>
+        <label for="text-area">Mini-currículo:</label>
+        <textarea id="text-area" name="text-area"></textarea>
+        <br>
+            </div>
+        </div>
+        <div class="botoes">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
