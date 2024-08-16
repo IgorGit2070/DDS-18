@@ -1,0 +1,167 @@
+
+#body2 {
+    background-color: blueviolet;
+    height: 1000px;
+    margin: 0px;
+}
+
+.menu {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+#menu1 {
+    top: 0px;
+    background-color: black;
+    position: sticky;
+    /* z-index: -1; */
+}
+
+#menu1 > ul {
+    list-style: none;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+#menu1 > ul > li {
+    color: white;
+    background-color: red;
+    width: 160px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+#menu1 > ul > li:hover {
+    background-color: blue;
+}
+
+#menu2 {
+    position: relative;
+    display: block;
+    background-color: red;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+#menu2 > ul {
+    list-style: none;
+    text-align: center;
+}
+
+#menu2 > ul > li {
+    color: black;
+    background-color: white;
+    width: 160px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+#menu2 > ul > li:hover {
+    background-color: aqua;
+    padding: 5px;
+}
+
+
+
+
+
+body {
+    background-color: magenta;
+    margin: 0px;
+    padding: 0;
+    height: 1000px;
+}
+
+.pai {
+    width: 300px;
+    height: 300px;
+}
+
+.filho {
+    width: 150px;
+    height: 150px;
+}
+
+/* estatico */
+.p-estatico{
+    position: static;
+    background-color: green;
+}
+.f-estatico{
+    position: static;
+    background-color: blue;
+}
+
+/* fixado */
+.p-fixed {
+    background-color: red;
+    position: fixed;
+    right: 5%;
+    bottom: 0%;
+}
+
+.f-fixed {
+    background-color: yellow;
+    top: 20%;
+    left: 30%;
+}
+
+/* sticky */
+.p-stick {
+    background-color: pink;
+    position: sticky;
+    margin: 100px 0 0 320px;
+    top: 0;
+    left: 0;
+}
+.f-stick {
+    background-color: black;
+}
+
+/* relativo */
+.p-relative {
+    background-color: aqua;
+    margin: 150px;
+}
+
+.f-relative {
+    background-color: bisque;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+/* absolute com pai static */
+.p-absolute-estatico {
+    margin-top: 200px;
+    background-color: sandybrown;
+}
+
+.f-absolute-estatico {
+    background-color: rebeccapurple;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+/* absolute com pai não static */
+.p-absolute-nao-estatico {
+    background-color: darkcyan;
+    position: relative;
+    margin-top: 15px;
+}
+.f-absolute-nao-estatico {
+    background-color: deeppink;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
